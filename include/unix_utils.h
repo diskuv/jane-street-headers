@@ -3,7 +3,9 @@
 
 #define _GNU_SOURCE
 
+#ifndef __MINGW32__
 #include <sys/uio.h>
+#endif
 #include <errno.h>
 #include "ocaml_utils.h"
 #include "core_params.h"
